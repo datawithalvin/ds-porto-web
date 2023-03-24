@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
   homeButton.textContent = 'Back to Home';
   homeButton.style.position = 'absolute';
   homeButton.style.left = '20px';
-  homeButton.style.top = '20px';
+  homeButton.style.bottom = '20px';
 
   document.body.appendChild(backToTopButton);
-  document.body.appendChild(homeButton);
+  document.getElementById('page-footer').appendChild(homeButton);
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
