@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   homeButton.addEventListener('click', () => {
-    window.location.href = '{{ site.baseurl }}/pages/index.html';
+    window.location.href = '{{ site.baseurl }}/index.html';
   });
 });
 
