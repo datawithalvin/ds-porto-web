@@ -9,12 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const homeButton = document.createElement('button');
   homeButton.textContent = 'Back to Home';
-  homeButton.style.position = 'absolute';
+  homeButton.style.position = 'fixed';
   homeButton.style.left = '20px';
-  homeButton.style.top = '20px';
+  homeButton.style.bottom = '20px';
 
   document.body.appendChild(backToTopButton);
-  document.body.appendChild(homeButton);
+  
+  // Add homeButton only if current page is not index.html
+  if (window.location.pathname !== '/ds-porto-web/index.html') {
+    document.body.appendChild(homeButton);
+  }
 
   window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {

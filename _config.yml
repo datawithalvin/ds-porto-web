@@ -1,5 +1,5 @@
 title: datawithalvin
 description: My DS Portfolio Website
 url: https://datawithalvin.github.io
-baseurl: /ds-porto-web/
-permalink: /blog/:year/:month/:day/:title.html
+baseurl: /ds-porto-web
+permalink: /:title
