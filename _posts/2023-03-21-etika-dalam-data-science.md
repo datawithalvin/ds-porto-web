@@ -15,8 +15,9 @@ Bicara soal etika, mungkin akan muncul pertanyaan, “Emang kenapa sih etika itu
 
 Oleh karena itu, di artikel ini kita akan bahas tiga aspek etika yang paling penting dalam data science, yaitu privasi, bias, dan transparansi. Kita akan lihat bagaimana isu-isu ini bisa muncul dalam praktek dan strategi apa yang mungkin bisa kita lakukan untuk mengatasi masalah tersebut.
 
+<div style="border-top: 2px dashed; width: 40%; margin: 0 auto;"></div>
+
 I. Privasi
-----------
 
 Mari membahas privasi lebih dulu. Bayangkan kita menjadi seorang data scientist di Spotify atau YouTube. Setiap hari, setiap waktu, kita akan mendapatkan banyak informasi dari para pengguna layanan, seperti lagu yang mereka dengarkan, video apa yang mereka tonton, berapa lama mereka menggunakan aplikasi, bahkan genre dari tontonan dan lagu favorit. Informasi ini mungkin akan sangat membantu kita dalam menciptakan model rekomendasi yang lebih personal dan relevan, sehingga pengguna bisa menemukan konten yang mereka suka dan terus menggunakan layanan dari aplikasi kita.
 
@@ -30,8 +31,10 @@ Apa yang bisa kita lakukan untuk menjaga privasi data pengguna? Ada beberapa car
 
 Menjaga privasi data itu bukan hanya perihal mematuhi peraturan, tapi juga soal menjaga kepercayaan dan hubungan baik dengan pengguna. Dengan menerapkan beberapa contoh strategi di atas, kita bisa menjaga privasi data pengguna dan memastikan mereka merasa aman saat menggunakan layanan yang kita tawarkan.
 
+<div style="border-top: 2px dashed; width: 40%; margin: 0 auto;"></div>
+
 II. Bias
---------
+
 
 Dalam konteks di pembahasan ini, bias itu adalah ketidakadilan atau ketimpangan yang muncul dalam data atau model yang kita buat. Bias ini bisa terjadi karena banyak faktor, seperti data yang tidak representatif atau metode analisis yang salah. Yang perlu kita sadari adalah bias ini bisa berdampak buruk, terutama untuk kelompok-kelompok yang rentan atau tidak terwakili dengan baik dalam data.
 
@@ -47,12 +50,15 @@ Lalu, gimana cara kita mengurangi bias dalam data science? Ada beberapa langkah 
 
 Penting untuk kita untuk selalu waspada terhadap bias di dalam data science. Dengan mengurangi bias dalam hal yang kita lakukan, kita dapat membantu menciptakan solusi yang lebih adil dan mungkin bisa bermanfaat untuk lebih banyak orang.
 
+<div style="border-top: 2px dashed; width: 40%; margin: 0 auto;"></div>
+
 III. Transparasi
-----------------
 
 Selain privasi dan bias, transparansi juga jadi hal yang penting dalam etika di bidang data science. Transparansi itu artinya kita harus jelas dan terbuka tentang cara kerja model atau algoritma yang kita buat, dan juga tentang bagaimana kita menggunakan data yang ada. Dengan transparansi, kita dapat membangun kepercayaan dari pengguna dan memastikan jika sistem yang kita buat tidak disalahgunakan.
 
 Sebagai contoh, ketika kita mengembangkan model rekomendasi untuk aplikasi seperti Spotify atau YouTube, kita harus menjelaskan bagaimana sistem tersebut bekerja dan apa saja faktor yang mempengaruhi rekomendasi yang diberikan ke pengguna. Selain itu, kita juga perlu menjelaskan bagaimana data pengguna digunakan dalam sistem tersebut dan apa saja langkah yang kita ambil untuk melindungi privasi mereka. Dengan demikian, pengguna dapat lebih memahami alasan di balik rekomendasi yang mereka terima dan merasa lebih nyaman dalam menggunakan layanan yang kita tawarkan. Transparansi ini akan membantu membangun hubungan yang lebih baik dengan pengguna dan menciptakan lingkungan yang lebih aman bagi mereka.
+
+<div style="border-top: 2px dashed; width: 40%; margin: 0 auto;"></div>
 
 Di dalam dunia data science yang semakin dan terus berkembang ini, aku sadar kalau kita sebagai data scientist harus selalu mempertimbangkan etika dalam pekerjaan kita. Mulai dari menjaga privasi data pengguna, mengurangi bias, hingga menjaga transparansi. Dengan selalu mempertimbangkan dampak yang bisa ditimbulkan oleh model dan algoritma yang kita kembangkan, kita akan mampu memberikan solusi yang lebih responsif dan ramah pengguna. Dalam jangka panjang, perhatian kita pada etika akan membantu kita menciptakan solusi yang lebih inklusif, adil, dan aman bagi banyak orang. Tanggung jawab kita nggak hanya terbatas pada menghasilkan model yang bagus, menghasilkan model yang akurat, tetapi juga memastikan jika model tersebut tidak merugikan orang lain.
 
