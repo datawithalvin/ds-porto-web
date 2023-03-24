@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +18,16 @@
         <h1><a href="/">📊 datawithalvin</a></h1>
         <p>Hey, welcome to my little corner of the internet,  where you'll find a bunch of stuff I've done in my free time. Like, I don't know, data viz and stuff? I mean, it's not like I'm trying to impress you or anything. But yeah, take a look around if you want and if anything catches your eye, feel free to drop me a line. I'm always up for a chat about all things data.</p>
         <ul class="list">
-            <!-- Add your projects or articles here as list items -->
+            <!-- Use Liquid tags to generate list of posts -->
+            {% for post in site.posts %}
             <li class="list-item">
-                <a href="data-science-ethics">
-                    <small class="date">21.03.2023</small>
-                    <span>Etika dalam Data Science: Kenapa Menjadi Sangat Penting?</span>
+                <a href="{{ post.url }}">
+                    <small class="date">{{ post.date | date: "%d.%m.%Y" }}</small>
+                    <span>{{ post.title }}</span>
                 </a>
-                <small class="project-summary" id="post-content">Discusses the importance of ethics in data science.</small>
+                <small class="project-summary" id="post-content">{{ post.summary }}</small>
             </li>
-            <li class="list-item">
-                <a href="/project2.html">
-                    <small class="date">11.03.2023</small>
-                    <span>Project 2 Title</span>
-                </a>
-                <small class="project-summary" id="post-content">A brief description of Project 2.</small>
-            </li>
+            {% endfor %}
         </ul>
         <div class="navigation-buttons">
             <button id="prev-button" disabled>Previous</button>
@@ -42,5 +41,3 @@
     <script src="{{ site.baseurl }}/scripts/main.js"></script>
 </body>
 </html>
-
-
