@@ -16,16 +16,16 @@ layout: default
 <body>
     <main id="main">
         <h1><a href="/">📊 datawithalvin</a></h1>
-        <p>Hey, welcome to my little corner of the internet,  where you'll find a bunch of stuff I've done in my free time. Like, I don't know, data viz and stuff? I mean, it's not like I'm trying to impress you or anything. But yeah, take a look around if you want and if anything catches your eye, feel free to drop me a line. I'm always up for a chat about all things data.</p>
+        <p> Oh, hi! Welcome to my little corner of the internet,  where you'll find a bunch of stuff I've done in my free time. Like, I don't know, data viz and stuff? I mean, it's not like I'm trying to impress you or anything. But yeah, take a look around if you want and if anything catches your eye, feel free to drop me a line. I'm always up for a chat about all things data.</p>
         <ul class="list">
             <!-- Use Liquid tags to generate list of posts -->
             {% for post in site.posts %}
             <li class="list-item">
-                <a href="{{ post.url }}">
+                <a href="{{ site.baseurl }}{{ post.url }}">
                     <small class="date">{{ post.date | date: "%d.%m.%Y" }}</small>
                     <span>{{ post.title }}</span>
                 </a>
-                <small class="project-summary" id="post-content">{{ post.summary }}</small>
+                <small class="project-summary" id="post-content">{{ post.excerpt }}</small>
             </li>
             {% endfor %}
         </ul>
@@ -37,7 +37,6 @@ layout: default
     <footer id="page-footer">
         <small>datawithalvin ✷ 2023</small>
     </footer>
-
     <script src="{{ site.baseurl }}/scripts/main.js"></script>
 </body>
 </html>
