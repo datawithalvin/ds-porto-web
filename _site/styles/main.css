@@ -22,13 +22,24 @@ body {
 }
 
 .top-image {
-    display: inline-block;
-    width: max-content;
-    margin-bottom: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 0.2rem;
+    position: relative;
 }
 
 .top-image img {
-    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
 }
 
 h1 {
@@ -43,7 +54,7 @@ p {
 }
 
 #main-content p {
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;

@@ -3,3 +3,5 @@ description: My DS Portfolio Website
 url: https://datawithalvin.github.io
 baseurl: /ds-porto-web
 permalink: /:title
+top_image: /:top_image
+img_caption: /:img_caption
