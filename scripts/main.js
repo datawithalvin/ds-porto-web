@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   homeButton.addEventListener('click', () => {
-    window.location.href = '{{ site.baseurl }}/index.html';
-  });
+    window.location.href = '/ds-porto-web/index.html';
+  });  
 });
 
 
