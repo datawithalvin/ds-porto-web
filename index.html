@@ -17,9 +17,12 @@ layout: default
     <main id="main">
         <h1>📊 datawithalvin</h1>
         <p> Oh, hi! Welcome to my little corner of the internet,  where you'll find a bunch of stuff I've done in my free time. Like, I don't know, data viz and stuff? I mean, it's not like I'm trying to impress you or anything. But yeah, take a look around if you want and if anything catches your eye, feel free to drop me a line. I'm always up for a chat about all things data.</p>
+        <p>So far, there are {{ site.posts | size }} posts in the list below:</p>
         <ul class="list">
             <!-- Use Liquid tags to generate list of posts -->
+            {% assign counter = 0 %}
             {% for post in site.posts %}
+            {% assign counter = counter | plus:1 %}
             <li class="list-item">
                 <a href="{{ site.baseurl }}{{ post.url }}">
                     <small class="date">{{ post.date | date: "%d.%m.%Y" }}</small>
