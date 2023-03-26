@@ -1,0 +1,21 @@
+[debug] [2023-03-25T19:21:52.605Z] ----------------------------------------------------------------------
+[debug] [2023-03-25T19:21:52.607Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PF2L6BL6\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-25T19:21:52.607Z] CLI Version:   11.25.1
+[debug] [2023-03-25T19:21:52.607Z] Platform:      win32
+[debug] [2023-03-25T19:21:52.607Z] Node Version:  v18.15.0
+[debug] [2023-03-25T19:21:52.608Z] Time:          Sun Mar 26 2023 02:21:52 GMT+0700 (Indochina Time)
+[debug] [2023-03-25T19:21:52.608Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-25T19:21:52.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-25T19:21:52.615Z] > authorizing via signed-in user (alvinnoza.data@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\PF2L6BL6\Documents\alvin\personal-works\2023-projects\alvin-portofolio-website\ds-porto-web
+
