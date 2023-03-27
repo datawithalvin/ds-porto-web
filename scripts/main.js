@@ -13,10 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
   homeButton.style.left = '20px';
   homeButton.style.bottom = '20px';
 
+  const currentUrl = window.location.href;
+  const localIndexPath = '/ds-porto-web/index.html';
+  const remoteIndexPath = 'https://datawithalvin.github.io/ds-porto-web/';
+
   document.body.appendChild(backToTopButton);
   
-  // Add homeButton only if current page is not index.html
-  if (window.location.pathname !== '/ds-porto-web/index.html') {
+  // Add homeButton only if current page is not index.html or site.baseurl
+  if (currentUrl !== remoteIndexPath && window.location.pathname !== localIndexPath) {
     document.body.appendChild(homeButton);
   }
 
@@ -43,20 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // navigation buttons
 const listItems = document.querySelectorAll(".list-item");
-let currentItemIndex = 0;
+let currentPage = 1;
+const totalPages = Math.ceil(listItems.length / 8);
 
 function updateNavigationButtons() {
   const prevButton = document.getElementById("prev-button");
   const nextButton = document.getElementById("next-button");
 
-  prevButton.disabled = currentItemIndex === 0;
-  nextButton.disabled = currentItemIndex === listItems.length - 1;
+  prevButton.disabled = currentPage === 1;
+  nextButton.disabled = currentPage === totalPages;
 }
 
 function navigate(direction) {
-  listItems[currentItemIndex].classList.toggle("hidden");
-  currentItemIndex += direction;
-  listItems[currentItemIndex].classList.toggle("hidden");
+  currentPage += direction;
+  listItems.forEach((item) => {
+    if (parseInt(item.getAttribute("data-page")) === currentPage) {
+      item.classList.remove("hidden");
+    } else {
+      item.classList.add("hidden");
+    }
+  });
   updateNavigationButtons();
 }
 
@@ -64,7 +74,7 @@ document.getElementById("prev-button").addEventListener("click", () => navigate(
 document.getElementById("next-button").addEventListener("click", () => navigate(1));
 
 listItems.forEach((item, index) => {
-  if (index !== currentItemIndex) {
+  if (parseInt(item.getAttribute("data-page")) !== currentPage) {
     item.classList.add("hidden");
   }
 });

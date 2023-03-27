@@ -21,6 +21,7 @@ layout: default
         <ul class="list">
             <!-- Use Liquid tags to generate list of posts -->
             {% assign counter = 0 %}
+            {% assign page = 1 %}
             {% for post in site.posts %}
             {% assign counter = counter | plus:1 %}
             <li class="list-item">
@@ -30,6 +31,10 @@ layout: default
                 </a>
                 <small class="project-summary" id="post-content">{{ post.excerpt }}</small>
             </li>
+            {% if counter == 8 %}
+            {% assign counter = 0 %}
+            {% assign page = page | plus:1 %}
+            {% endif %}            
             {% endfor %}
         </ul>
         <div class="navigation-buttons">

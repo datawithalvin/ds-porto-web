@@ -2,7 +2,7 @@
 layout: post
 title: 'Animated Visualization of Kalimantan Wildfires in 2021'
 date: 2022-06-12
-excerpt:  Visual Tour of Kalimantan Wildfires' Geographical Distribution
+excerpt:  Visual of Kalimantan Wildfires' Geographical Distribution
 ---
 
 I recently created an animated GIF that shows the active fires in Kalimantan throughout 2021. The data used for this visualization came from the National Centers for Environmental Information - Visible Infrared Imaging Radiometer Suite (NCEI-VIIRS) and was plotted using the Plotly Express library. The GIF provides a geographical view of fire hotspots in the region and how they change over time.
