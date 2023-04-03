@@ -40,4 +40,4 @@ Aplikasi web ini membantu merangkum thread Twitter dengan mengekstrak konten thr
     }
 </style>
 
-Aplikasi ini dibuat menggunakan SNScrape, LangChain, dan OpenAI model untuk summarizernya. Kalau mau coba aplikasinya, bisa langsung klik di link [ini](https://bit.ly/3Kt3yIK) atau bisa kunjungi link [ini][https://github.com/datawithalvin/chains-llm-app) untuk lihat source codenya.
+Aplikasi ini dibuat menggunakan SNScrape, LangChain, dan OpenAI model untuk summarizernya. Kalau mau coba aplikasinya, bisa langsung klik di link [ini](https://bit.ly/3Kt3yIK) atau bisa kunjungi link [ini](https://github.com/datawithalvin/chains-llm-app) untuk lihat source codenya.
