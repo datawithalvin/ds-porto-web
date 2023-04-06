@@ -2,7 +2,7 @@
 layout: post
 title: 'Twitter Thread Summarizer'
 date: 2023-04-03
-excerpt:  Build a Twitter Thread Summarizer Web App with SNSCrape, LangChain, and OpenAI
+excerpt:  Build a Twitter Thread Summarizer Web App with LangChain and OpenAI
 ---
 
 Aplikasi web ini membantu merangkum thread Twitter dengan mengekstrak konten thread dan menghasilkan ringkasan yang singkat dan dalam kalimat yang mudah dipahami. Dalam pengembangannya, aplikasi ini memanfaatkan teknologi Large Language Model (LLM) yang mampu memahami konteks bahasa manusia dan menghasilkan teks yang lebih natural. Dengan aplikasi ini, kamu bisa dengan mudah membaca thread Twitter tanpa harus membaca satu persatu tweetnya. 
