@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude Oil Price Forecasting</title>
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='none'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' font-size='16' dominant-baseline='middle'>💫</text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+    <link href="/ds-porto-web/styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+          <li><a href="/ds-porto-web/index.html">Home</a></li>
+          <li><a href="/ds-porto-web/about.html">About Me</a></li>
+        </ul>
+        <hr>
+    </nav>
+      
+    <div id="main-content">
+        <div id="main-content">
+    <h1>Crude Oil Price Forecasting</h1>
+    
+    <p class="date">Published: 07.05.2023</p>
+    <style>
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    p {
+        text-align: justify;
+    }
+</style>
+
+<p><img src="assets/images/dataco/cover.png" alt="cover" /></p>
+
+<p>Welcome to the inner workings of my Crude Oil WTI Price Forecasting Project. This endeavor seeks to predict the future price of Crude Oil WTI for the next 14 days, employing a 95% confidence interval sourced from weekly price variations, as we transform the data to log-normal values. Each forecasted price (from today to 13 days ahead) is color-coded, the hues indicating standard deviation levels. Let’s delve into the specifics of how I made it possible.</p>
+
+<h3>Web Scraping With BeautifulSoup</h3>
+
+<p>The initial stage of the project was all about gathering the necessary data. For this, I utilized BeautifulSoup, a Python library designed for web scraping purposes to pull the data out of HTML and XML files. It provided an efficient way of navigating, searching, and modifying the parse tree. It was particularly useful in extracting the historical Crude Oil WTI Prices, forming the base dataset for our forecasting model.</p>
+
+<h3>Preprocessing and Exploring the Data</h3>
+
+<p>Upon acquiring the data, the next step was to preprocess and explore it. I loaded the dataset, trimmed it to only contain data until the last closed price, and then created a copy to commence with exploratory data analysis. With the goal of understanding weekly price trends, I transformed this copy to only reflect prices and their corresponding day names, and then selected entries corresponding to Mondays. From here, weekly price differences were calculated and transformed to log-normal distributions. These procedures gave me key insights into mean and standard deviations of log-normal distributions of weekly price changes.</p>
+
+<h3>Long Short-Term Memory (LSTM)</h3>
+
+<p>The heart of this project lies in the application of LSTM (Long Short-Term Memory) model, a type of recurrent neural network well-suited to classify, process, and predict time series given time lags of unknown durations. Unlike traditional feedforward neural networks, LSTM has feedback connections that make it a “general purpose computer.” It can not only process single data points (like images), but also entire sequences of data.</p>
+
+<h3>LSTM for Forecasting</h3>
+
+<p>In this project, the LSTM model was trained to predict future prices based on the last 60 days of data. The LSTM model architecture and parameters were carefully chosen to minimize the prediction error on the test dataset. After training, the model was used to predict the future prices. These were initially in the scaled format used for training the model, and so had to be transformed back to their original form for interpretability. The forecasted prices were stored and appended to the historical prices, and each price was rounded to two decimal places for a neat representation.</p>
+
+<h3>Confidence Intervals and Visualization</h3>
+
+<p>The final steps involved the calculation of daily price differences on the concatenated dataset, followed by the construction of a 95% confidence interval for these prices. After determining the weekly standard deviation and mean of prices, the interval was calculated using the scipy.stats norm.interval function, which takes the level of confidence, the mean, and the standard deviation as parameters. The lower and upper limits of the interval were then added as new columns to the dataset.</p>
+
+<p>The color-coding scheme was applied to distinguish between historical and forecasted prices. Historical prices were marked in black. For forecasted prices, a custom function was created that determines color based on the number of standard deviations the price change represents, using green, yellow, orange, and red to denote the respective ranges. Finally, the resulting visualization data was prepared for exporting, providing a complete and color-coded visualization of historical and forecasted Crude Oil WTI prices.</p>
+
+<div style="border-top: 2px dashed; width: 40%; margin: 0 auto;"></div>
+
+<p>You can view the complete code and project process on this <a href="https://github.com/datawithalvin/Crude-Oil-Price-Forecasting">GitHub repository.</a></p>
+
+</div>
+
+    </div>
+    <footer id="page-footer">
+        <small>alvin noza ✷ 2023</small>
+    </footer>
+
+    <script src="/ds-porto-web/scripts/main.js"></script>
+</body>
+</html>
